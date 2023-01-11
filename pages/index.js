@@ -8,6 +8,7 @@ import Hero from '../components/Hero'
 export default function Home() {
   const [productsInfo, setProductsInfo] = useState();
   const [phrase, setPhrase] = useState();
+
   useEffect(() => {
     fetch('api/products')
     .then(response => response.json())
@@ -55,7 +56,7 @@ export default function Home() {
                 </div>
                 <p className="font-thin mt-1 h-24">Push advancement through perpetuating poverty! If you don&apos;t have it, you&apos;re an outsider! Shun!</p>
                 <div className="flex mt-4 mr-2">
-                    <div className="text-xl grow text-gray-400 text-center">coming soon</div>
+                    <div className="text-sm grow text-gray-400 text-center uppercase">coming soon</div>
                 </div>
               </div>
             </div>

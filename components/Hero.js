@@ -31,10 +31,3 @@ export default function Hero() {
         </section>
     )
 }
-
-{/**
-    1. https://images.unsplash.com/photo-1567400358939-8030cc6b99d2
-    2.
-    3.
-    4. 
-*/}
