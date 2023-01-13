@@ -3,7 +3,7 @@
 ![Screenshot 2023-01-11 at 2 29 05 PM](https://user-images.githubusercontent.com/91632194/211900084-336dd615-93db-47da-8e0d-dc0defdcee31.png)
 
 ## Description
-An ecommerce site for a company called Abstract. Abstract specializes in the societal and evnvironmental effects and byproducts of consumerism and materialism. This website is completely and unequivocally satire. 
+An ecommerce site for a company called Abstract. Abstract specializes in the societal and evnvironmental effects and byproducts of consumerism and materialism. **This website is completely and unequivocally satire.**
 
 ## View 
 [Live Demo](https://abstract-knlrvr.vercel.app/)
