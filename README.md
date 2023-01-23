@@ -20,5 +20,5 @@ An ecommerce site for a company called Abstract. Abstract specializes in the soc
 3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
 ## Notes
-This is an ongoing project. 
+> This is an ongoing project. 
 
