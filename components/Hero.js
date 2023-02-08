@@ -28,6 +28,6 @@ export default function Hero() {
                     <RxDoubleArrowDown />
                 </Link>
             </div>
-        </section>
+        </section> 
     )
 }
