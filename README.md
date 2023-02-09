@@ -21,4 +21,5 @@ An ecommerce site for a company called Abstract. Abstract specializes in the soc
 
 ## Notes
 > This is an ongoing project. 
-> For educational & learning purposes only, I have left the .env file. 
+> 
+> For educational & learning purposes only, I have left the .env file. This will be removed with future updates. 
