@@ -14,7 +14,7 @@ An ecommerce site for a company called Abstract. Abstract specializes in the soc
 - [TailwindCSS](https://tailwindcss.com/docs/installation)
 - [MongoDB](https://www.mongodb.com/)
 
-## Running This Project Yourself
+## Running This Project Yourself 
 1. Clone the project to your machine with `git clone https://github.com/knlrvr/abstract.git`
 2. On a command line inside of the application's folder, run `npm start`
 3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
