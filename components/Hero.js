@@ -3,8 +3,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Hero() {
+<<<<<<< HEAD
     return (
         <section className="h-screen" id="hero">
+=======
+    return ( 
+        <section className="h-screen">
+>>>>>>> 680179cc1ed546df6473770da7f95466d113bb7d
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image  
                     src="https://images.unsplash.com/photo-1534312527009-56c7016453e6"
@@ -28,6 +33,6 @@ export default function Hero() {
                     <RxDoubleArrowDown />
                 </Link>
             </div>
-        </section>
+        </section> 
     )
 }
