@@ -70,6 +70,7 @@ export default function Home() {
                 className="bg-gray-100 w-64 md:w-80 lg:w-100 py-2 px-4 rounded-full"
               />
             </div>
+            <h5 className="text-center text-gray-400">AVAILABLE PRODUCTS</h5>
             <div className="max-w-5xl mx-auto">
               {categoriesNames.map(categoryName => ( 
                 <div key={categoryName}>
