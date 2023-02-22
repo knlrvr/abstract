@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Product from '../components/Product'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
+import Bottom from '../components/Bottom'
 
 export default function Home() {
   const [productsInfo, setProductsInfo] = useState();
@@ -69,11 +70,11 @@ export default function Home() {
                 className="bg-gray-100 w-64 md:w-80 lg:w-100 py-2 px-4 rounded-full"
               />
             </div>
-            <div>
+            <div className="max-w-5xl mx-auto">
               {categoriesNames.map(categoryName => ( 
                 <div key={categoryName}>
                   {products.find(p => p.category === categoryName) && (
-                    <div>
+                    <div id="products">
                       <h2 className="mb-4"></h2>
                       <div className="flex flex-wrap justify-center gap-12">
                         {products.filter(p => p.category === categoryName).map(productInfo => (
@@ -89,6 +90,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Bottom />
       </main>
     </>
   )

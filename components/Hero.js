@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Hero() {
     return (
-        <section className="h-screen">
+        <section className="h-screen" id="hero">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image  
                     src="https://images.unsplash.com/photo-1534312527009-56c7016453e6"

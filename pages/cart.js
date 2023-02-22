@@ -102,8 +102,8 @@ export default function Cart() {
           </div>
         </div>
         <input type="hidden" name="products" value={selectedProducts.join(',')}/>
-          <Link href="/">
-            <p className="text-xs text-center mb-2 mt-8">Need something else? Click to continue shopping!</p>
+          <Link href="/#products">
+            <p className="text-xs text-center mb-2 mt-8 hover:text-blue-300 hover:underline underline-offset-4">Need something else? Click here to continue shopping!</p>
           </Link>
           <div className="flex justify-center space-x-12">
             <button type="submit" className="text-sm bg-blue-300 px-5 py-2 rounded-xl font-thin text-white my-4 float-right">
