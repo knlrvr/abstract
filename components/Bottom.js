@@ -68,7 +68,7 @@ export default function Bottom() {
             </div> 
         </section>
 
-        <div className="text-sm mt-24 mb-2 flex flex-col md:flex-row text-center justify-between px-8">
+        <div className="text-sm font-thin mt-24 mb-2 flex flex-col md:flex-row text-center justify-between px-8">
             <div className="">
                 &copy; ABSTRACT. Store 2023.
             </div>
