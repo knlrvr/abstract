@@ -22,7 +22,7 @@ export default function Bottom() {
                     <br /><br /> 
                     <span className="font-bold">
                         We offer more than a product.
-                        We offer the guarantee that you'll regret it.
+                        We offer the guarantee that you&apos;ll regret it.
                     </span> 
                 </h3>
             </div>
@@ -45,9 +45,9 @@ export default function Bottom() {
                 </Link>
             </div>
             <div className="col-span-2 row-span-2 w-full p-2 h-full flex flex-col justify-center items-center text-center space-y-12 text-lg font-thin">
-                Have questions? We're here to help!
+                Have questions? We&apos;re here to help!
                 <br /><br />
-                Contact us via your preferred method and we'll get back to you as quickly as we can!
+                Contact us via your preferred method and we&apos;ll get back to you as quickly as we can!
                 <div className="flex space-x-8 md:space-x-24">
                     <div className="flex flex-col items-center">
                     <BsTelephone 
