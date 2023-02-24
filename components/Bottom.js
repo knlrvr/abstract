@@ -7,7 +7,7 @@ import {
     BsPinMap
 } from 'react-icons/bs'
 
-export default function Bottom() {
+export default function Bottom() { 
     return (
         <>
         <section className="grid grid-cols-1 grid-rows-3 md:grid-cols-4 gap-4 px-4 max-w-6xl mx-auto mt-12 group">
