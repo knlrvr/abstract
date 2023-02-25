@@ -9,10 +9,10 @@ An ecommerce site for a company called Abstract. Abstract specializes in the soc
 [Live Demo](https://abstract-knlrvr.vercel.app/)
 
 ## Built With
-- [React](https://reactjs.org/docs/getting-started.html)
-- [Next](https://nextjs.org/docs)
-- [TailwindCSS](https://tailwindcss.com/docs/installation)
-- [MongoDB](https://www.mongodb.com/)
+- [React](https://reactjs.org/docs/getting-started.html) 
+- [Next](https://nextjs.org/docs) 
+- [TailwindCSS](https://tailwindcss.com/docs/installation) 
+- [MongoDB](https://www.mongodb.com/) 
 
 ## Running This Project Yourself 
 1. Clone the project to your machine with `git clone https://github.com/knlrvr/abstract.git`
