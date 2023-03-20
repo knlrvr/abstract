@@ -15,7 +15,7 @@ An ecommerce site for a company called Abstract. Abstract specializes in the soc
 - [MongoDB](https://www.mongodb.com/) 
 
 ## Running This Project Yourself 
-1. Clone the project to your machine with `git clone https://github.com/knlrvr/knlrvr-portfolio.git`
+1. Clone the project to your machine with `git clone https://github.com/knlrvr/abstract.git`
 2. On a command line inside of the application's folder, run `npm install`
 3. Again, on a command line inside of the application's folder, run `npm start`
 4. Open `http://localhost:3000` in a browser to view the application
