@@ -34,9 +34,9 @@ export default function Navbar() {
               <li>
                 <Link href='/cart'>
                     <BsCart />
-                    <span className="cart text-orange-300 text-sm absolute top-5 right-6 md:right-10"> 
+                    {/* <span className="cart text-orange-300 text-sm absolute top-5 right-6 md:right-10"> 
                         {selectedProducts.length}
-                    </span>
+                    </span> */}
                 </Link>
               </li>
             </ul>
