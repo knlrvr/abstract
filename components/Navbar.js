@@ -32,11 +32,12 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href='/cart'>
-                    <BsCart />
-                    {/* <span className="cart text-orange-300 text-sm absolute top-5 right-6 md:right-10"> 
+                <Link href='/cart' className="flex items-center">
+                    <BsCart 
+                        className="mr-2" />
+                    <span className="cart text-orange-300 text-sm"> 
                         {selectedProducts.length}
-                    </span> */}
+                    </span>
                 </Link>
               </li>
             </ul>
