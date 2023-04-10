@@ -30,23 +30,23 @@ export default function Bottom() {
                     </button>
                     <div className="flex py-6 justify-between text-blue-300">
                         <Link href="https://github.com/knlrvr/abstract" target="_blank"
-                            className='hover:text-blue-400 transition duration-200'>
+                            className='hover:text-gray-400 transition duration-200'>
                             <BsGithub />
                         </Link>
                         <Link href="https://linkedin.com/in/kane-lariviere" target="_blank"
-                            className='hover:text-blue-400 transition duration-200'>
+                            className='hover:text-gray-400 transition duration-200'>
                             <BsLinkedin />
                         </Link>
                         <Link href="https://facebook.com" target="_blank"
-                            className='hover:text-blue-400 transition duration-200'>
+                            className='hover:text-gray-400 transition duration-200'>
                             <BsFacebook />
                         </Link>
                         <Link href="https://twitter.com/knlrvr" target="_blank"
-                            className='hover:text-blue-400 transition duration-200'>
+                            className='hover:text-gray-400 transition duration-200'>
                             <BsTwitter />
                         </Link>
                         <Link href="https://instagram.com/kanelarivieresucks" target="_blank"
-                            className='hover:text-blue-400 transition duration-200'>
+                            className='hover:text-gray-400 transition duration-200'>
                             <BsInstagram />
                         </Link>
                     </div>
@@ -112,7 +112,10 @@ export default function Bottom() {
             </div>
             <div className="flex justify-between text-xs text-gray-500 mt-8">
                 <p>&copy; Abstract Store</p>
-                <p> KNLRVR </p>
+                <Link href="https://github.com/knlrvr" 
+                    className="hover:text-gray-300">
+                    <p> KNLRVR </p>
+                </Link>
             </div>
         </section>
         </>

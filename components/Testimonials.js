@@ -12,7 +12,7 @@ const Testimonials = () => {
                 <div className="flex text-3xl">
                     <BsStar /><BsStar /><BsStar /><BsStar /><BsStar />
                 </div>
-                <div className="text-xs py-2">5/5 stars</div>
+                <div className="text-xs py-2 font-thin">5/5 stars</div>
                 <div className="py-2 max-w-lg text-center">
                     The products provided by Abstract are a beacon of our society, 
                     and there&apos;s no place I&apos;d rather get them!
@@ -26,7 +26,7 @@ const Testimonials = () => {
                 <div className="flex text-3xl justify-center">
                     <BsStar /><BsStar /><BsStar /><BsStar /><BsStar />
                 </div>
-                <div className="text-xs py-2">5/5 stars</div>
+                <div className="text-xs py-2 font-thin">5/5 stars</div>
                 <div className="py-2 max-w-lg text-center">
                     The products arrived fast and hassle free! I&apos;d recommend Abstract to anyone!
                     <br />
@@ -39,7 +39,7 @@ const Testimonials = () => {
                 <div className="flex text-3xl justify-center">
                     <BsStar /><BsStar /><BsStar /><BsStar /><BsStar />
                 </div>
-                <div className="text-xs py-2">5/5 stars</div>
+                <div className="text-xs py-2 font-thin">5/5 stars</div>
                 <div className="py-2 max-w-lg text-center">
                     Customer support went above and beyond when I didn&apos;t receive my Buyer&apos;s Remorse! They&apos;re incredible!
                     <br />

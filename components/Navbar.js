@@ -35,7 +35,7 @@ export default function Navbar() {
                 <Link href='/cart' className="flex items-center">
                     <BsCart 
                         className="mr-2" />
-                    <span className="cart text-orange-300 text-sm"> 
+                    <span className="cart text-blue-300 text-sm"> 
                         {selectedProducts.length}
                     </span>
                 </Link>

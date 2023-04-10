@@ -8,7 +8,7 @@ export default function Hero() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image  
                     src="https://images.unsplash.com/photo-1619118884592-11b151f1ae11"
-                    width="1000"
+                    width="2000"
                     height="0"
                     alt="background"
                     className=""
