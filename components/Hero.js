@@ -7,8 +7,8 @@ export default function Hero() {
         <section className="h-screen" id="hero">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image  
-                    src="https://images.unsplash.com/photo-1534312527009-56c7016453e6"
-                    width="400"
+                    src="https://images.unsplash.com/photo-1619118884592-11b151f1ae11"
+                    width="1000"
                     height="0"
                     alt="background"
                     className=""
@@ -17,7 +17,7 @@ export default function Hero() {
             <div className="text-6xl md:text-7xl lg:text-8xl text-gray-700 font-serif font-bold tracking-widest absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-28">
                 Abstract
             </div>
-            <div className="text-gray-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/5 tracking-widest">
+            <div className="text-gray-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/5 tracking-widest">
                 <p className="text-sm text-center md:text-md lg:text-lg">the</p>
                 <p className="text-xl text-center md:text-2xl lg:text-3xl">c o n c e p t</p>
                 <p className="text-sm text-center md:text-md lg:text-lg">of</p>
