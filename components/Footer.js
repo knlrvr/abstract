@@ -112,7 +112,6 @@ export default function Bottom() {
             </div>
             <div className="flex justify-between text-xs text-gray-500 mt-8">
                 <p>&copy; Abstract Store</p>
-                <p> | </p>
                 <p> KNLRVR </p>
             </div>
         </section>
