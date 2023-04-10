@@ -114,8 +114,6 @@ export default function Bottom() {
                 <p>&copy; Abstract Store</p>
                 <p> | </p>
                 <p> KNLRVR </p>
-                <p> | </p>
-                <p> hey </p>
             </div>
         </section>
         </>
