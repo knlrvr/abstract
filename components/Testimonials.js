@@ -15,7 +15,7 @@ const Testimonials = () => {
                 <div className="text-xs py-2">5/5 stars</div>
                 <div className="py-2 max-w-lg text-center">
                     The products provided by Abstract are a beacon of our society, 
-                    and there's no place I'd rather get them!
+                    and there&apos;s no place I&apos;d rather get them!
                     <br />
                     <em>- Alex F.</em>
                 </div>
@@ -28,7 +28,7 @@ const Testimonials = () => {
                 </div>
                 <div className="text-xs py-2">5/5 stars</div>
                 <div className="py-2 max-w-lg text-center">
-                    The products arrived fast and hassle free! I'd recommend Abstract to anyone!
+                    The products arrived fast and hassle free! I&apos;d recommend Abstract to anyone!
                     <br />
                     <em>- Logan H.</em>
                 </div>
@@ -41,7 +41,7 @@ const Testimonials = () => {
                 </div>
                 <div className="text-xs py-2">5/5 stars</div>
                 <div className="py-2 max-w-lg text-center">
-                    Customer support went above and beyond when I didn't receive my Buyer's Remorse! They're incredible!
+                    Customer support went above and beyond when I didn&apos;t receive my Buyer&apos;s Remorse! They&apos;re incredible!
                     <br />
                     <em>- Stephen A.</em>
                 </div>
