@@ -54,7 +54,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="mt-2">
-                    <h3 className="text-md h-12">Profit Consumerism</h3>
+                    <h3 className="text-md h-12 font-semibold">Profit Consumerism</h3>
                 </div>
                 <p className="font-thin mt-1 h-24">Push advancement through perpetuating poverty! If you don&apos;t have it, you&apos;re an outsider! Shun!</p>
                 <div className="flex mt-4 mr-2">

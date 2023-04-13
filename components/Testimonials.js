@@ -5,7 +5,7 @@ import { BsStar } from 'react-icons/bs'
 const Testimonials = () => {
   return (
     <>
-    <section className="py-6 px-8 mt-12">
+    <section className="py-6 px-8 mt-24 mb-24">
         <div className="flex flex-col space-y-12">
             {/* 1 */}
             <div className="flex flex-col items-center">
