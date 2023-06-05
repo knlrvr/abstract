@@ -23,7 +23,7 @@ export default function Product({_id,name,price,description,picture}) {
     setTimeout(setIsActive, 3000);
 
     return (
-        <div className="w-full md:w-64 border p-6 rounded-xl">
+        <div className="w-full md:w-64 border p-6 rounded-xl hover:shadow-lg transition duration-200">
             <div className="rounded-xl h-48">
                 <Image 
                     src={picture} 
