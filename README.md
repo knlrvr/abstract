@@ -1,6 +1,6 @@
 <h2 align="center"> Abstract (store) </h2>
 
-![Screenshot 2023-01-11 at 2 29 05 PM](https://user-images.githubusercontent.com/91632194/211900084-336dd615-93db-47da-8e0d-dc0defdcee31.png)
+![abstract-new](https://user-images.githubusercontent.com/91632194/235236272-d957cdf4-3352-4417-b561-07ac65b18ec4.png)
 
 ## Description
 An ecommerce site for a company called Abstract. Abstract specializes in the societal and evnvironmental effects and byproducts of consumerism and materialism. **This website is completely and unequivocally satire.**
