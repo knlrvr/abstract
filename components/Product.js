@@ -23,8 +23,8 @@ export default function Product({_id,name,price,description,picture}) {
     setTimeout(setIsActive, 3000);
 
     return (
-        <div className="w-64 border p-4 rounded-xl">
-            <div className="p-2 rounded-xl h-48">
+        <div className="w-full md:w-64 border p-6 rounded-xl">
+            <div className="rounded-xl h-48">
                 <Image 
                     src={picture} 
                     alt="product picture" 
@@ -33,8 +33,8 @@ export default function Product({_id,name,price,description,picture}) {
                     className="rounded-md"
                 />
             </div>
-            <div className="mt-2">
-                <h3 className="text-md h-12 font-semibold">{name}</h3>
+            <div className="mt-4">
+                <h3 className="text-md h-12 font-semibold tracking-widest">{name}</h3>
             </div>
             <p className="font-thin mt-1 h-24">{description}</p>
             <div className="flex mt-4 mr-2">

@@ -42,9 +42,9 @@ export default function Home() {
           <div className="flex justify-center">
                 <p className="font-bold tracking-widest text-xl text-gray-500">Product Spotlight</p>
               </div>
-            <div className="flex justify-center mb-12 mt-4">
-              <div className="w-64 border border-gray-600 p-4 rounded-lg shadow-xl">
-                <div className="p-2 rounded-xl h-48">
+            <div className="flex justify-center mb-12 mt-4 px-6">
+              <div className="w-full md:w-64 mx-auto border border-gray-600 p-4 rounded-lg shadow-xl">
+                <div className="p-2 rounded-xl h-54">
                     <Image 
                         src="https://images.unsplash.com/photo-1617791160588-241658c0f566"
                         alt="product picture" 
@@ -53,7 +53,7 @@ export default function Home() {
                         className="rounded-xl"
                     />
                 </div>
-                <div className="mt-2">
+                <div className="mt-2 ">
                     <h3 className="text-md h-12 font-semibold">Profit Consumerism</h3>
                 </div>
                 <p className="font-thin mt-1 h-24">Push advancement through perpetuating poverty! If you don&apos;t have it, you&apos;re an outsider! Shun!</p>
@@ -62,13 +62,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center mb-12">
+            <div className="flex justify-center mb-12 max-w-5xl mx-auto px-6 pt-10">
               <input 
                 value={phrase}
                 onChange={e => setPhrase(e.target.value)}
                 type="text"
                 placeholder="Search All Products"
-                className="bg-gray-100 w-64 md:w-80 lg:w-100 py-2 px-4 rounded-full"
+                className="bg-gray-100 w-full md:w-80 lg:w-100 py-2 px-4 rounded-full"
               />
             </div>
             <h5 className="text-center text-gray-400">AVAILABLE PRODUCTS</h5>
