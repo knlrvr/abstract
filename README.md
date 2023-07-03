@@ -5,6 +5,9 @@
 ## Description
 An ecommerce site for a company called Abstract. Abstract specializes in the societal and evnvironmental effects and byproducts of consumerism and materialism. **This website is completely and unequivocally satire.**
 
+## Purpose
+The main purpose of Abstract is NOT to make fun of consumerism/materialism, but was meant to build knowledge and familiarity with MongoDB and building a full stack application with a non-relational DB. I chose MongoDB because it seemed to have the most support at the time of creating this site.  
+
 ## View 
 [Live Demo](https://abstract-knlrvr.vercel.app/)
 
