@@ -6,12 +6,15 @@ export default function Hero() {
     return (
         <section className="h-screen" id="hero">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                {/* parent div styling */}
+                {/* absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 */}
                 <Image  
                     src="https://images.unsplash.com/photo-1619118884592-11b151f1ae11"
+                    // 
                     width="2000"
-                    height="0"
+                    height="2000"
                     alt="background"
-                    className=""
+                    className="w-full h-fit max-w-5xl mx-auto"
                 />
             </div>
             <div className="text-6xl md:text-7xl lg:text-8xl text-gray-700 font-serif font-bold tracking-widest absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-28">
