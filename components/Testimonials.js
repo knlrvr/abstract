@@ -1,56 +1,64 @@
-import React from 'react'
+import React, { useState } from 'react'
+import TestimonialCard from './TestimonialCard'
 
-import { BsStar } from 'react-icons/bs'
+import { BsArrowRight, BsArrowLeft } from 'react-icons/bs'
 
 const Testimonials = () => {
-  return (
-    <>
-    <section className="py-6 px-8 mt-24 mb-24">
-        <div className="flex flex-col space-y-12">
-            {/* 1 */}
-            <div className="flex flex-col items-center">
-                <div className="flex text-3xl">
-                    <BsStar /><BsStar /><BsStar /><BsStar /><BsStar />
-                </div>
-                <div className="text-xs py-2 font-thin">5/5 stars</div>
-                <div className="py-2 max-w-lg text-center">
-                    The products provided by Abstract are a beacon of our society, 
-                    and there&apos;s no place I&apos;d rather get them!
-                    <br />
-                    <em>- Alex F.</em>
-                </div>
-            </div>
+    const [currentCard, setCurrentCard] = useState(0);
+    const customerData = [
+        {
+            stars: '5/5',
+            customer: 'Alex F',
+            quote: 'The products provided by Abstract are a beacon of our society, and there\'s no place I\'d rather get them!'
+        },
+        {
+            stars: '5/5',
+            customer: 'Logan H',
+            quote: 'The products arrived fast and hassle free! I\'d recommend Abstract to anyone!'
+        },
+        {
+            stars: '5/5',
+            customer: 'Stephen A',
+            quote: 'Customer support went above and beyond when I didn\'t receive my Buyer\'s Remorse! The Abstract team is incredible!'
+        },
+        {
+            stars: '5/5',
+            customer: 'Sarah T',
+            quote: 'There\'s no place else I\'d rather go to receive my wasteful consumption. Simply wonderful.'
+        },
+    ];
 
-            {/* 2 */}
-            <div className="flex flex-col items-center">
-                <div className="flex text-3xl justify-center">
-                    <BsStar /><BsStar /><BsStar /><BsStar /><BsStar />
-                </div>
-                <div className="text-xs py-2 font-thin">5/5 stars</div>
-                <div className="py-2 max-w-lg text-center">
-                    The products arrived fast and hassle free! I&apos;d recommend Abstract to anyone!
-                    <br />
-                    <em>- Logan H.</em>
-                </div>
-            </div>
+    const navigateNext = () => {
+        setCurrentCard((prevCard) => ( prevCard +1 ) % customerData.length);
+    };
 
-            {/* 3 */}
-            <div className="flex flex-col items-center">
-                <div className="flex text-3xl justify-center">
-                    <BsStar /><BsStar /><BsStar /><BsStar /><BsStar />
-                </div>
-                <div className="text-xs py-2 font-thin">5/5 stars</div>
-                <div className="py-2 max-w-lg text-center">
-                    Customer support went above and beyond when I didn&apos;t receive my Buyer&apos;s Remorse! They&apos;re incredible!
-                    <br />
-                    <em>- Stephen A.</em>
-                </div>
-            </div>
+    const navigatePrev = () => {
+        setCurrentCard((prevCard) => prevCard === 0 ? customerData.length - 1: prevCard - 1);
+    };
 
+    return (
+        <div className="max-w-5xl mx-auto px-6 md:px-2 py-48">
+            <div className="flex items-center space-x-6">
+                <button type='button'
+                    onClick={navigatePrev}
+                    className="border border-gray-300 rounded-full p-2"
+                >
+                    <BsArrowLeft />
+                </button>
+                <TestimonialCard
+                    stars={customerData[currentCard].stars}
+                    customer={customerData[currentCard].customer}
+                    quote={customerData[currentCard].quote}
+                />
+                <button type="button"
+                    onClick={navigateNext}
+                    className="border border-gray-300 rounded-full p-2"
+                >
+                    <BsArrowRight />
+                </button>
+            </div>
         </div>
-    </section>
-    </>
-  )
+    )
 }
 
 export default Testimonials
