@@ -40,7 +40,7 @@ export default function Product({_id,name,price,description,picture}) {
                     <h3 className="text-md h-12 font-semibold tracking-widest">{name}</h3>
                 </div>
                 <p className="font-thin mt-1 h-24">{description}</p>
-                <div className="flex mt-4 mr-2">
+                <div className="flex mt-4">
                     <div className="text-lg font-light grow">${price}</div>
                     {isActive? 
                     <button type="button"
