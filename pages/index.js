@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
+import About from '../components/About'
 
 export default function Home() {
   const [productsInfo, setProductsInfo] = useState();
@@ -38,6 +39,7 @@ export default function Home() {
       <main>
         <Navbar />
         <Hero />
+        <About />
         <Featured />
         <section id="products">
           <div className="p-4 mt-6">

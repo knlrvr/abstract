@@ -41,7 +41,7 @@ const Testimonials = () => {
             <div className="flex items-center space-x-6">
                 <button type='button'
                     onClick={navigatePrev}
-                    className="border border-gray-300 rounded-full p-2"
+                    className="border border-[#222] rounded-full p-2"
                 >
                     <BsArrowLeft />
                 </button>
@@ -52,7 +52,7 @@ const Testimonials = () => {
                 />
                 <button type="button"
                     onClick={navigateNext}
-                    className="border border-gray-300 rounded-full p-2"
+                    className="border border-[#222] rounded-full p-2"
                 >
                     <BsArrowRight />
                 </button>

@@ -26,7 +26,7 @@ export default function Product({_id,name,price,description,picture}) {
 
     return (
         <>
-            <div className="border p-4 border-gray-300 hover:shadow-lg transition duration-200 bg-gray-50 flex flex-col">
+            <div className="border p-4 border-[#222] hover:shadow-lg transition duration-200 bg-gray-50 flex flex-col">
                 <div className="h-full w-full flex justify-center">
                     <Image 
                         src={picture} 
