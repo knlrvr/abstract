@@ -44,7 +44,7 @@ const Features = () => {
                 <p className="text-white font-light text-3xl">
                   Consumer Culture?
                 </p>
-                <span className="text-white font-light tracking-wide">We've got you covered.</span>
+                <span className="text-white font-light tracking-wide">We&apos;ve got you covered.</span>
               </div>
               <div className="absolute bottom-12 left-6 border border-white">
                 <Link href="#products" 
