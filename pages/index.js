@@ -62,6 +62,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
             <div className="flex justify-center mb-12 max-w-5xl mx-auto px-6 pt-10">
               <input 
                 value={phrase}
@@ -71,7 +72,7 @@ export default function Home() {
                 className="bg-gray-100 w-full md:w-80 lg:w-100 py-2 px-4 rounded-full"
               />
             </div>
-            <h5 className="text-center text-gray-400">AVAILABLE PRODUCTS</h5>
+
             <div className="max-w-5xl mx-auto">
               {categoriesNames.map(categoryName => ( 
                 <div key={categoryName}>

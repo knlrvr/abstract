@@ -19,14 +19,14 @@ export default function Navbar() {
             <ul className="flex text-2xl space-x-6 md:space-x-8 lg:space-x-10">
               <li>
                 <Link href='/login'>
-                    <p className="text-xs md:text-sm py-1 border-b border-gray-600">
+                    <p className="text-xs py-1 border-b border-gray-600">
                         Log In
                     </p>
                 </Link>
               </li>
               <li>
                 <Link href='/signup'>
-                    <p className="text-xs md:text-sm py-1 border-b border-gray-600">
+                    <p className="text-xs py-1 border-b border-gray-600">
                         Sign Up
                     </p>
                 </Link>

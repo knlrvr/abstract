@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   overscroll-behavior: none !important;
+  scroll-behavior: smooth !important;
 }
 
 html, 
