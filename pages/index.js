@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import Featured from '../components/Featured'
 import Product from '../components/Product'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
@@ -37,51 +38,28 @@ export default function Home() {
       <main>
         <Navbar />
         <Hero />
+        <Featured />
         <section id="products">
-          <div className="p-4 mt-24">
-          <div className="flex justify-center">
-                <p className="font-bold tracking-widest text-xl text-gray-500">Product Spotlight</p>
-              </div>
-            <div className="flex justify-center mb-12 mt-4 px-6">
-              <div className="w-full md:w-64 mx-auto border border-gray-600 p-4 rounded-lg shadow-xl">
-                <div className="p-2 rounded-xl h-54">
-                    <Image 
-                        src="https://images.unsplash.com/photo-1617791160588-241658c0f566"
-                        alt="product picture" 
-                        width="1000"
-                        height="0"
-                        className="rounded-xl"
-                    />
-                </div>
-                <div className="mt-2 ">
-                    <h3 className="text-md h-12 font-semibold">Profit Consumerism</h3>
-                </div>
-                <p className="font-thin mt-1 h-24">Push advancement through perpetuating poverty! If you don&apos;t have it, you&apos;re an outsider! Shun!</p>
-                <div className="flex mt-4 mr-2">
-                    <div className="text-sm grow text-gray-400 text-center uppercase">coming soon</div>
-                </div>
-              </div>
-            </div>
+          <div className="p-4 mt-6">
 
-            <div className="flex justify-center mb-12 max-w-5xl mx-auto px-6 pt-10">
+            <div className="flex justify-start mb-12 max-w-5xl mx-auto pt-10 px-2">
               <input 
                 value={phrase}
                 onChange={e => setPhrase(e.target.value)}
                 type="text"
                 placeholder="Search All Products"
-                className="bg-gray-100 w-full md:w-80 lg:w-100 py-2 px-4 rounded-full"
+                className="bg-gray-100 w-full md:w-[19.5rem] py-2 px-4 rounded-full"
               />
             </div>
 
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto px-2">
               {categoriesNames.map(categoryName => ( 
                 <div key={categoryName}>
                   {products.find(p => p.category === categoryName) && (
                     <div id="products">
-                      <h2 className="mb-4"></h2>
-                      <div className="flex flex-wrap justify-center gap-12">
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10">
                         {products.filter(p => p.category === categoryName).map(productInfo => (
-                        <div key={productInfo._id} className="px-6">
+                        <div key={productInfo._id} className="">
                           <Product {...productInfo} />
                         </div>
                       ))}
@@ -91,6 +69,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
+
           </div>
         </section>
         <Testimonials />

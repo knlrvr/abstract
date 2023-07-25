@@ -21,19 +21,19 @@ export default function Product({_id,name,price,description,picture}) {
         setIsActive(true);
         setTimeout(() => {
             setIsActive(false);
-        }, 3000);
+        }, 1500);
     }
 
     return (
         <>
-            <div className="w-full md:w-64 border p-4 border-gray-300 rounded-xl hover:shadow-lg transition duration-200 bg-gray-50 flex flex-col">
-                <div className="rounded-md w-full h-fit overflow-hidden">
+            <div className="border p-4 border-gray-300 hover:shadow-lg transition duration-200 bg-gray-50 flex flex-col">
+                <div className="h-full w-full flex justify-center">
                     <Image 
                         src={picture} 
                         alt="product picture" 
                         width="1000"
-                        height="0"
-                        className="h-48 md:h-36"
+                        height="1000"
+                        className="object-cover h-64 md:h-56 lg:h-48"
                     />
                 </div>
                 <div className="mt-4">
@@ -43,12 +43,14 @@ export default function Product({_id,name,price,description,picture}) {
                 <div className="flex mt-4 mr-2">
                     <div className="text-lg font-light grow">${price}</div>
                     {isActive? 
-                    <button onClick={() => { onClick(); setIsActive(!isActive)}} 
-                        className="bg-blue-400 py-2 px-5 rounded-full text-white transition ease-in-out duration-400">
+                    <button type="button"
+                        onClick={() => { onClick(); setIsActive(!isActive)}} 
+                        className="bg-[#222] py-2 px-5 rounded-full text-white transition ease-in-out duration-400 cursor-default">
                         <BsCheck2 />
                     </button> :
-                    <button onClick={() => { onClick(); setIsActive(!isActive)}}
-                        className="bg-blue-400 py-2 px-5 rounded-full hover:bg-blue-300 text-white transition ease-in-out duration-400 hover:shadow-md hover:shadow-gray-600 hover:shadow-rounded">
+                    <button type="button"
+                        onClick={() => { onClick(); setIsActive(!isActive)}}
+                        className="bg-[#222] hover:bg-gray-400 py-2 px-5 rounded-full text-white transition ease-in-out duration-400 hover:shadow-md hover:shadow-gray-600 hover:shadow-rounded">
                         <AiOutlinePlus />
                     </button>
                     }
