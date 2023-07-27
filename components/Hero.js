@@ -29,7 +29,7 @@ export default function Hero() {
                             </div>
                             <div className="pt-8 flex justify-center md:justify-start">
                                 <Link href="#products"
-                                    className="flex items-center space-x-2 border-2 border-[#222] w-1/2 md:w-1/3 group"
+                                    className="flex items-center space-x-2 border border-[#222] w-1/2 md:w-1/3 group"
                                 >
                                     <span className="pl-6 p-2 font-light text-sm uppercase">Shop Now</span>
                                     <BsArrowRight 
@@ -48,8 +48,8 @@ export default function Hero() {
                         />
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 md:border-b md:border-t border-gray-300 py-6 md:py-0">
-                    <div className="flex items-center justify-between p-4 border-t md:border-t-0">
+                <div className="grid grid-cols-1 md:grid-cols-3 md:border-b md:border-t border-gray-400 py-6 md:py-0">
+                    <div className="flex items-center justify-between p-4 border-gray-400 border-t md:border-t-0">
                         <BsTruck 
                             className="text-3xl text-[#222]" />
                         <div className="flex flex-col text-sm text-right w-1/2">
@@ -57,7 +57,7 @@ export default function Hero() {
                             <p className="font-light text-xs">Free shipping on all US orders or orders above $1,000,000. </p>
                         </div>
                     </div>
-                    <div className="flex items-center justify-between border-t border-b md:border-t-0 md:border-b-0 md:border-r md:border-l p-4">
+                    <div className="flex items-center justify-between border-gray-400 border-t border-b md:border-t-0 md:border-b-0 md:border-r md:border-l p-4">
                         <BsBoxSeam 
                             className="text-3xl text-[#222]" />
                         <div className="flex flex-col text-sm text-right w-1/2">
@@ -65,7 +65,7 @@ export default function Hero() {
                             <p className="font-light text-xs"> Simply return your item within 90 days for a full refund.</p>
                         </div>
                     </div>
-                    <div className="flex items-center justify-between p-4 border-b md:border-b-0">
+                    <div className="flex items-center justify-between p-4 border-gray-400 border-b md:border-b-0">
                         <BsFillCreditCard2BackFill
                             className="text-3xl text-[#222]" />
                         <div className="flex flex-col text-sm text-right w-1/2">
