@@ -57,7 +57,7 @@ export default function Cart() {
   return (
     <>
     <Navbar />
-    <div className="flex justify-center text-sm font-thin mt-12 pb-12">Cart</div>
+    <div className="flex justify-center text-sm font-thin mt-12">Cart</div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto pb-12">
       <div className="">
@@ -65,7 +65,7 @@ export default function Cart() {
           const amount = selectedProducts.filter(id => id === productInfo._id).length;
           if (amount === 0) return;
           return (
-          <div className="max-w-5xl mx-auto px-4 mt-6" key={productInfo._id}>
+          <div className="max-w-5xl mx-auto px-4 mt-12" key={productInfo._id}>
             <div className="mt-1.5 rounded-xl float-left">
               <Image className="w-24 rounded-xl" 
                   src={productInfo.picture} 
@@ -74,7 +74,7 @@ export default function Cart() {
                   height="0"
               />
             </div>
-            <div className="pl-8 flex flex-col items-start">
+            <div className="pl-6 flex flex-col items-start">
               <h3 className="font-bold text-lg">{productInfo.name}</h3>
               <p className="text-sm text-gray-500">{productInfo.description}</p>
               <div className="grow mt-6 font-light">${productInfo.price}</div>
