@@ -108,7 +108,7 @@ export default function Cart() {
       </div>
 
         <div className="pt-6 px-2 md:px-6">
-          <form action="/" 
+          <form action="/#home" 
             method="POST" 
             className="px-4 border border-gray-400 bg-gray-50 shadow-lg">
             <div className="mt-8">

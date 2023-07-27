@@ -20,7 +20,7 @@ export default function Login() {
                         </div>
 
                         <div className="">
-                            <form action="/"
+                            <form action="/#home"
                                 method="POST">
                                 <input
                                     type="text"

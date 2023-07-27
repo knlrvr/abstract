@@ -23,7 +23,7 @@ export default function Signup() {
                         </div>
 
                         <div className="">
-                            <form action="/"
+                            <form action="/#home"
                                 method="POST">
                                 <input
                                     type="text"
