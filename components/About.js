@@ -16,11 +16,11 @@ const About = () => {
                         className="rounded-l-full rounded-t-full"
                     />
                 </div>
-                <div className="flex flex-col justify-center relative px-16 py-8">
+                <div className="flex flex-col justify-center relative px-2 md:px-16 py-8">
                     <h3 className="text-3xl font-thin tracking-wide">
                         About Abstract
                     </h3>
-                    <p className="text-sm py-4 font-light">
+                    <p className="text-sm py-10 font-light">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Proin sagittis nisl rhoncus mattis 
                     rhoncus urna neque viverra justo. Non consectetur a erat nam at lectus urna duis. 
