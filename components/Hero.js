@@ -27,9 +27,9 @@ export default function Hero() {
                                     <span className="font-semibold"> shopping</span>.
                                 </h2>
                             </div>
-                            <div className="pt-24">
+                            <div className="pt-8 flex justify-center md:justify-start">
                                 <Link href="#products"
-                                    className="flex items-center space-x-2 border-2 border-[#222] w-1/3 group"
+                                    className="flex items-center space-x-2 border-2 border-[#222] w-1/2 md:w-1/3 group"
                                 >
                                     <span className="pl-6 p-2 font-light text-sm uppercase">Shop Now</span>
                                     <BsArrowRight 
