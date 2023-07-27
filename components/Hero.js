@@ -11,7 +11,7 @@ import {
 
 export default function Hero() {
     return (
-        <section className="max-w-5xl mx-auto px-6 md:px-2" id="hero">
+        <section className="max-w-5xl mx-auto px-6 md:px-2" id="home">
             <div className="pt-6 pb-24">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-24">
                     <div className="flex justify-center md:justify-start items-center order-2 md:order-1 md:pt-12">
