@@ -154,7 +154,7 @@ export default function Bottom() {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between text-xs font-light text-white mt-8 px-4">
+                <div className="flex justify-between text-xs font-light text-white mt-8 px-4 pb-8">
                     <p>&copy; 2023 Abstract Store. All Rights Reserved.</p>
                     <Link href="https://github.com/knlrvr" 
                         className="hover:text-blue-300">
