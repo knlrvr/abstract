@@ -24,7 +24,7 @@ export default function Bottom() {
                         <input 
                             type="text"
                             placeholder="Email"
-                            className="focus:outline-none ring-1 ring-white font-light rounded-md p-1 px-2 mb-2 bg-[#222] placeholder:text-[#777]"
+                            className="ring-1 ring-white font-light rounded-md p-1 px-2 mb-2 bg-[#333] md:bg-[#222] placeholder:text-[#777] "
                         />
                         <button 
                             className="bg-[#333] rounded-md p-1 hover:bg-[#444] transition duration-200">
