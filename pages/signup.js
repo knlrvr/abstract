@@ -15,7 +15,7 @@ export default function Signup() {
             <Navbar />
             <div className="max-w-5xl mx-auto">
                 <div className="h-screen flex justify-center items-center pb-12 px-2 md:px-6">
-                    <div className="border border-gray-300 bg-gray-50 w-full md:w-1/2 flex flex-col py-8 px-16 space-y-12 shadow-lg">
+                    <div className="border border-gray-300 bg-gray-50 w-full md:w-1/2 flex flex-col py-8 px-8 md:px-16 space-y-12 shadow-lg">
                         
                         <div className="flex items-center justify-between w-full">
                             <BsLockFill />
