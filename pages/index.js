@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import Featured from '../components/Featured'
 import Product from '../components/Product'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
@@ -40,7 +39,6 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
-        <Featured />
         <section id="products">
           <div className="p-4 mt-6">
 
