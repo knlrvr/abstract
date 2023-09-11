@@ -12,7 +12,9 @@
 
 <a name="description"></a>
 ## Description
-An ecommerce site for a company called Abstract. Abstract specializes in the societal and environmental effects and byproducts of consumerism and materialism. **This website is completely and unequivocally satire.**
+Abstract is an innovative ecommerce store that offers a unique focus on concepts related to consumerism and materialism. Instead of traditional physical products, Abstract specializes in selling these thought-provoking concepts themselves. By challenging conventional notions of commerce, Abstract provides customers with an intellectual and philosophical exploration of consumerism and materialism.
+
+> **This website is completely and unequivocally satire.**
 
 <a name="purpose"></a>
 ## Purpose
