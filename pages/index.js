@@ -51,7 +51,7 @@ export default function Home() {
             <div className="max-w-5xl mx-auto">
               <div className="flex justify-center">
                 <span className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl tracking-widest pb-8 text-center">
-                  Shop the trendiest regret <br />you'll ever experience!
+                  Shop the trendiest regret <br />you&apos;ll ever experience!
                 </span>
               </div>
             </div>

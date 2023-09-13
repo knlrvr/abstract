@@ -32,7 +32,7 @@ export default function Hero() {
 
                     <div className="flex flex-col items-center md:items-start">
 
-                        <p className="font-semibold pt-4 text-base sm:text-lg md:text-xl lg:text-2xl tracking-widest">You want it. We've got it.</p>
+                        <p className="font-semibold pt-4 text-base sm:text-lg md:text-xl lg:text-2xl tracking-widest">You want it. We&apos;ve got it.</p>
                         <p className="font-light py-2 text-center md:text-left text-sm sm:text-base md:text-lg lg:text-xl">
                             Shop & discover your favorite aspects of consumerism & materialism, all at the tips of your fingers.
                         </p>
