@@ -55,8 +55,9 @@ export default function Cart() {
   const total = subtotal + taxPrice;
 
   return (
-    <>
+    <div className="relative">
     <Navbar />
+    <div className="w-full h-36 rounded-[2.5rem] absolute -top-14 bg-blue-50 -z-10"></div>
     <div className="flex justify-center text-sm font-thin mt-12">Cart</div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto pb-12">
@@ -145,6 +146,6 @@ export default function Cart() {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }

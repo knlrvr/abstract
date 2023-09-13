@@ -10,7 +10,8 @@ export default function Navbar() {
     const {selectedProducts} = useContext(ProductsContext);
 
     return (
-        <nav className="nav mt-2 py-2 px-6 md:px-2 flex items-center justify-between max-w-5xl mx-auto">
+        <div className="bg-blue-50">
+        <nav className="nav py-4 px-6 md:px-2 flex items-center justify-between max-w-5xl mx-auto">
             <Link href="/">
             <h1 className="text-sm py-1 font-mono"> 
                 A b s t r a c t . 
@@ -42,5 +43,6 @@ export default function Navbar() {
               </li>
             </ul>
         </nav>
+        </div>
     )
 }

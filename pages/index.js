@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Product from '../components/Product'
 import Navbar from '../components/Navbar'
@@ -11,6 +10,12 @@ import About from '../components/About'
 export default function Home() {
   const [productsInfo, setProductsInfo] = useState();
   const [phrase, setPhrase] = useState();
+
+  const [visibleProducts, setVisibleProducts] = useState();
+
+  const loadMore = () => {
+    setVisibleProducts(products.length);
+  };
 
   useEffect(() => {
     fetch('api/products')
@@ -27,6 +32,8 @@ export default function Home() {
     products = productsInfo;
   }
 
+
+
   return (
     <>
       <Head>
@@ -38,9 +45,16 @@ export default function Home() {
       <main>
         <Navbar />
         <Hero />
-        <About />
         <section id="products">
           <div className="p-4 mt-6">
+
+            <div className="max-w-5xl mx-auto">
+              <div className="flex justify-center">
+                <span className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl tracking-widest pb-8 text-center">
+                  Shop the trendiest regret <br />you'll ever experience!
+                </span>
+              </div>
+            </div>
 
             <div className="flex justify-start mb-12 max-w-5xl mx-auto pt-10 px-2">
               <input 

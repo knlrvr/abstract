@@ -33,7 +33,7 @@ export default function Product({_id,name,price,description,picture}) {
                         alt="product picture" 
                         width="1000"
                         height="1000"
-                        className="object-cover h-64 md:h-56 lg:h-48"
+                        className="object-cover h-44 sm:h-48 md:h-56 lg:h-48"
                     />
                 </div>
                 <div className="mt-4">
