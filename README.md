@@ -16,6 +16,8 @@ Abstract is an innovative ecommerce store that offers a unique focus on concepts
 
 > **This website is completely and unequivocally satire.**
 
+Abstract Store is the product of digital design agency Abstract Creative (also not real). View Abstract Creative [here](https://abstract-creative.vercel.app/).
+
 <a name="purpose"></a>
 ## Purpose
 The main purpose of Abstract is NOT to make fun of consumerism/materialism, but was meant to build knowledge and familiarity with MongoDB and building a full stack application with a non-relational DB. 
