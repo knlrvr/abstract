@@ -103,6 +103,12 @@ export default function Bottom() {
                             <span className="font-semibold">Company</span>
                             <ul className="">
                                 <li>
+                                <Link href="https://abstract-creative.vercel.app/" target="_blank"
+                                    className='hover:text-blue-300 transition duration-200'>
+                                    <p>Abstract Creative</p>
+                                </Link>
+                                </li>
+                                <li>
                                 <Link href="/login"
                                     className='hover:text-blue-300 transition duration-200'>
                                     <p>About Us</p>
