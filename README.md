@@ -37,6 +37,4 @@ The main purpose of Abstract is NOT to make fun of consumerism/materialism, but 
 
 <a name="notes"></a>
 ## Notes
-> This is an ongoing project. 
-> 
-> For educational & learning purposes only, I have left the .env file. This will be removed (& changed) with future updates. 
+> This project no longer receives updates.  
