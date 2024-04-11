@@ -8,9 +8,10 @@ export default function Login() {
     const [password, setPassword] = useState('');
 
     return (
-        <main>
+        <main className="">
             <Navbar />
-            <div className="max-w-5xl mx-auto">
+            <div className="w-full h-36 rounded-[2.5rem] absolute -top-14 bg-[#fbefe5] -z-10"></div>
+            <div className="max-w-5xl mx-auto px-4">
                 <div className="h-screen flex justify-center items-center pb-12 px-2 md:px-6">
                     <div className="border border-gray-400 bg-gray-50 w-full md:w-1/2 flex flex-col py-8 px-8 md:px-16 space-y-12 shadow-lg">
                         
@@ -20,7 +21,7 @@ export default function Login() {
                         </div>
 
                         <div className="">
-                            <form action="/#home"
+                            <form action="/"
                                 method="POST">
                                 <input
                                     type="text"
@@ -38,13 +39,13 @@ export default function Login() {
                                     placeholder="Password"
                                     className="bg-gray-100 w-full rounded-lg px-4 py-2 mb-2 focus:outline-none"
                                 />
-                                <div className="text-xs flex justify-end mb-2 hover:text-blue-400 transition duration-200">
+                                <div className="text-xs flex justify-end mb-2 hover:text-[#553666] transition duration-200">
                                     <Link href="/">
                                         <p>Forgot your password?</p>
                                     </Link>
                                 </div>
                                 <div className="flex justify-center">
-                                    <button type="submit" className="bg-blue-300 px-5 py-2 rounded-xl font-thin text-white my-4 hover:bg-blue-400 hover:shadow-lg transition duration-200">
+                                    <button type="submit" className="bg-[#553666] px-5 py-2 rounded-xl font-thin text-white my-4 hover:bg-[#222] hover:shadow-lg transition duration-200">
                                         Log In
                                     </button>
                                 </div>
@@ -52,7 +53,7 @@ export default function Login() {
                             <div className="flex justify-center text-sm text-gray-500 pt-8">
                                 <p>Don&apos;t have an account? <br />
                                     <Link href="/signup"
-                                        className="text-gray-800 hover:text-blue-400 flex justify-center transition duration-200">
+                                        className="text-gray-800 hover:text-[#553666] flex justify-center transition duration-200">
                                         Sign Up!
                                     </Link>
                                 </p>

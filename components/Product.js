@@ -21,41 +21,48 @@ export default function Product({_id,name,price,description,picture}) {
         setIsActive(true);
         setTimeout(() => {
             setIsActive(false);
-        }, 1500);
+        }, 1000);
     }
 
     return (
         <>
-            <div className="border p-4 border-[#222] hover:shadow-lg transition duration-200 bg-gray-50 flex flex-col">
+
+            <div className="border p-4 border-[#222] hover:shadow-lg transition duration-200 bg-gray-50 flex flex-col space-y-4">
                 <div className="h-full w-full flex justify-center">
                     <Image 
                         src={picture} 
                         alt="product picture" 
                         width="1000"
                         height="1000"
-                        className="object-cover h-44 sm:h-48 md:h-56 lg:h-48"
+                        className="object-cover h-44 sm:h-48 md:h-56 lg:h-48 rounded-md"
                     />
                 </div>
-                <div className="mt-4">
-                    <h3 className="text-md h-12 font-semibold tracking-widest">{name}</h3>
+                <div className="flex justify-between">
+                    <p className="font-light tracking-wide">{name}</p>
+                    <span className="font-semibold">${price}</span>
                 </div>
-                <p className="font-thin mt-1 h-24">{description}</p>
-                <div className="flex mt-4">
-                    <div className="text-lg font-light grow">${price}</div>
-                    {isActive? 
-                    <button type="button"
-                        onClick={() => { onClick(); setIsActive(!isActive)}} 
-                        className="bg-[#222] py-2 px-5 rounded-full text-white transition ease-in-out duration-400 cursor-default">
-                        <BsCheck2 />
-                    </button> :
+                <div className="h-24">
+                    <p className="font-thin">{description}</p>
+                </div>
+
+                <div className="flex justify-end">
+                {isActive? 
+                    <div className="flex items-center text-sm gap-[2.56rem] bg-[#222] text-white px-4 py-2 rounded-full
+                        ">
+                        <p className="text-xs">Added!</p>
+                        <BsCheck2 className={`${isActive ? 'animate-ping' : ''}`}/>
+                    </div> :
                     <button type="button"
                         onClick={() => { onClick(); setIsActive(!isActive)}}
-                        className="bg-[#222] hover:bg-gray-400 py-2 px-5 rounded-full text-white transition ease-in-out duration-400 hover:shadow-md hover:shadow-gray-600 hover:shadow-rounded">
-                        <AiOutlinePlus />
+                        className="flex items-center text-sm gap-4 bg-[#553666] text-white px-4 py-2 rounded-full hover:shadow-lg
+                        ">
+                        <p className="text-xs">Add to Cart</p>
+                        <AiOutlinePlus className={`${isActive ? '' : ''}`} />
                     </button>
                     }
                 </div>
             </div>
+
         </>
     );
 }

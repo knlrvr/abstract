@@ -14,8 +14,6 @@ import Link from 'next/link'
 export default function Cart() {
   const { selectedProducts, setSelectedProducts } = useContext(ProductsContext);
   const [productsInfo, setProductsInfo] = useState([]);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
 
   useEffect(() => {
     const uniqIds = [...new Set(selectedProducts)];
@@ -57,11 +55,27 @@ export default function Cart() {
   return (
     <div className="relative">
     <Navbar />
-    <div className="w-full h-36 rounded-[2.5rem] absolute -top-14 bg-blue-50 -z-10"></div>
-    <div className="flex justify-center text-sm font-thin mt-12">Cart</div>
+    <div className="w-full h-36 rounded-[2.5rem] absolute -top-14 bg-[#fbefe5] -z-10"></div>
+    <div className="flex justify-center text-sm font-thin mt-16">
+      
+      {selectedProducts.length === 0 ? (
+        <p>Cart is empty!</p>
+      ) : (
+        <p>Cart</p>
+      )}
+    </div>
+
+    {selectedProducts.length === 0 && (
+      <div className="flex flex-col items-center justify-center mt-12 space-y-12">
+        <Link href='/#products' className="text-sm underline underline-offset-4 text-[#553666]">
+          Click here to continue shopping &rarr;
+        </Link>
+      </div>
+    )}
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto pb-12">
       <div className="">
+        
         {productsInfo.length && productsInfo.map(productInfo => {
           const amount = selectedProducts.filter(id => id === productInfo._id).length;
           if (amount === 0) return;
@@ -79,11 +93,11 @@ export default function Cart() {
               <h3 className="font-bold text-lg">{productInfo.name}</h3>
               <p className="text-sm text-gray-500">{productInfo.description}</p>
               <div className="grow mt-6 font-light">${productInfo.price}</div>
-              <div className="flex items-center justify-between w-full mt-6 border-b border-gray-400 pb-8">
+              <div className="flex items-center justify-between w-full mt-6 pb-8">
                 <div className="">
                   <button type="button"
                     onClick={() => lessOfThisProduct(productInfo._id)} 
-                    className="border border-blue-300 px-1 p-1 rounded-full text-blue-300">
+                    className="border border-[#553666] px-1 p-1 rounded-full text-[#553666]">
                     <BsDash />
                   </button>
                   <span className="px-6 font-light">
@@ -91,7 +105,7 @@ export default function Cart() {
                   </span>
                   <button type="button"
                     onClick={() => moreOfThisProduct(productInfo._id)} 
-                    className="bg-blue-400 px-1 p-1 rounded-full text-white">
+                    className="bg-[#553666] px-1 p-1 rounded-full text-white">
                     <BsPlus />
                   </button> 
                 </div>
@@ -108,8 +122,9 @@ export default function Cart() {
         )})}
       </div>
 
-        <div className="pt-6 px-2 md:px-6">
-          <form action="/#home" 
+      {selectedProducts.length > 0 && (
+        <div className="pt-12 px-4 md:pl-8 md:pr-4 md:fixed right-4 md:w-1/2">
+          <form action="/" 
             method="POST" 
             className="px-4 border border-gray-400 bg-gray-50 shadow-lg">
             <div className="mt-8">
@@ -131,20 +146,21 @@ export default function Cart() {
               value={selectedProducts.join(',')}
             />
             <Link href="/#products">
-              <p className="text-xs font-light text-center mb-2 mt-8 hover:text-blue-300 hover:underline underline-offset-4">Need something else? Click here to continue shopping!</p>
+              <p className="text-xs font-light text-center mb-2 mt-8 hover:text-[#553666] hover:underline underline-offset-4">Need something else? Click here to continue shopping!</p>
             </Link>
-            <div className="flex justify-between md:justify-center space-x-12">
+            <div className="flex justify-between space-x-12">
               <button type="submit" 
                 className="text-xs bg-[#444] hover:bg-[#222] px-5 py-2 rounded-xl font-thin text-white my-4 float-right transition duration-200">
                 Guest Checkout
               </button>
               <button type="submit" 
-                className="text-xs bg-blue-300 hover:bg-blue-400 px-5 py-2 rounded-xl font-thin text-white my-4 float-right transition duration-200">
+                className="text-xs bg-[#553666] hover:bg-[#222] px-5 py-2 rounded-xl font-thin text-white my-4 float-right transition duration-200">
                 Log In & Checkout
               </button>
             </div>
           </form>
         </div>
+        )}
       </div>
     </div>
   );

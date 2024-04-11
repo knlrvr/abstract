@@ -10,7 +10,7 @@ export default function Navbar() {
     const {selectedProducts} = useContext(ProductsContext);
 
     return (
-        <div className="bg-blue-50">
+        <div className="bg-[#fbefe5]">
         <nav className="nav py-4 px-6 md:px-2 flex items-center justify-between max-w-5xl mx-auto">
             <Link href="/">
             <h1 className="text-sm py-1 font-mono"> 
@@ -36,7 +36,7 @@ export default function Navbar() {
                 <Link href='/cart' className="flex items-center">
                     <BsCart 
                         className="mr-2" />
-                    <span className="cart text-blue-300 text-sm pt-1"> 
+                    <span className="cart text-[#553666] text-sm pt-1"> 
                         {selectedProducts.length}
                     </span>
                 </Link>

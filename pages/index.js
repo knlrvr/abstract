@@ -48,7 +48,7 @@ export default function Home() {
         <section id="products">
           <div className="p-4 mt-6">
 
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto mb-4 sm:mb-16">
               <div className="flex justify-center">
                 <span className="font-semibold text-base sm:text-lg md:text-xl lg:text-2xl tracking-widest pb-8 text-center">
                   Shop the trendiest regret <br />you&apos;ll ever experience!
