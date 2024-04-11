@@ -37,7 +37,7 @@ const Testimonials = () => {
     };
 
     return (
-        <div className="pt-16 -mb-32">
+        <div className="pt-16 -mb-32 lg:-mb-48 xl:-mb-56">
             <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g transform="translate(-4.000000, 76.000000)" fill="#fbefe5" fill-rule="nonzero">
